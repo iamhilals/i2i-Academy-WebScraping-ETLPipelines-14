@@ -22,14 +22,14 @@ This project demonstrates a complete, standalone Data Engineering workflow (ETL 
 
 1. Start the PostgreSQL Container
 Ensure Docker is running on your machine, then spin up the database:
-```bash
+
 docker run --name etl-postgres -e POSTGRES_USER=hilal -e POSTGRES_PASSWORD=hilal -e POSTGRES_DB=etl_db -p 5433:5432 -d postgres
 
 (Note: Port 5433 is used on the host to prevent conflicts with local PostgreSQL installations).
 
 2. Install Dependencies
-Bash
 pip install requests beautifulsoup4 pandas psycopg2-binary
+
 3. Execute the Pipeline
 Run the main script to trigger the ETL process:
 
